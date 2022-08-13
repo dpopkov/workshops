@@ -1,8 +1,10 @@
 package study.aspects.service;
 
+import org.springframework.stereotype.Service;
 import study.aspects.dao.BookDao;
 import study.aspects.domain.Book;
 
+@Service
 public class BookServiceImpl implements BookService {
     private final BookDao bookDao;
 

@@ -5,11 +5,13 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import study.aspects.domain.Book;
 import study.aspects.domain.Person;
 import study.aspects.service.BookService;
 import study.aspects.service.PersonService;
 
+@EnableAspectJAutoProxy
 @ComponentScan
 @Configuration
 public class SpringMain {
